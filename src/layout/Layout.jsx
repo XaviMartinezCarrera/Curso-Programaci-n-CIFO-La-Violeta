@@ -8,26 +8,26 @@ export default function Layout () {
     <>
       <nav class="w3-top">
         <div
-          class="w3-bar w3-white w3-padding w3-card"
-          style={{ letterSpacing: "4px" }}
+          class="w3-sidebar w3-black w3-text-orange w3-padding w3-card w3-hover-text-white"
+          style={{ letterSpacing: "3px", width: 150, height: 290}}
         >
           <Link class="w3-bar-item w3-button" to="/">
             Home
+          </Link>
+          <Link class="w3-bar-item w3-button" to="/tablon">
+            Anuncios
           </Link>
           <Link class="w3-bar-item w3-button" to="/orders">
             Orders
           </Link>
           <Link class="w3-bar-item w3-button" to="/menus">
-            Menus
+            Músicos
           </Link>
           <Link class="w3-bar-item w3-button" to="/tables">
-            Tables
+            Grupos
           </Link>
           <Link class="w3-bar-item w3-button" to="/fakeData">
             Fake Data
-          </Link>
-          <Link class="w3-bar-item w3-button" to="/team">
-            Team
           </Link>
           <Link class="w3-bar-item w3-button" to="/about">
             About
@@ -39,7 +39,7 @@ export default function Layout () {
         <Header class="w3-container" />
       </div>
 
-      <div class="w3-content" style={{ width: "80%" }}>
+      <div class="w3-content w3-black" style={{ width: "80%" }}>
         <Outlet />
       </div>
 

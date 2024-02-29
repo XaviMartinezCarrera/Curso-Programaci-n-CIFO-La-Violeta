@@ -6,8 +6,9 @@ import About from "./pages/About";
 import Menus from "./pages/Menus/Menus";
 import Tables from "./pages/Tables/Tables";
 import Orders from "./pages/Orders/Orders";
-import Team from "./pages/Team/Team";
 import FakeData from "./pages/FakeData/FakeData";
+import Tablon from "./pages/Tablon/Tablon";
+
 
 export default function App() {
   return (
@@ -16,12 +17,12 @@ export default function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="orders" element={<Orders />} />
+          <Route path="tablon" element={<Tablon />} />
           <Route path="menus" element={<Menus />} />
           <Route path="tables" element={<Tables />} />
           <Route path="fakeData" element={<FakeData />} />
           <Route path="about" element={<About />} />
           <Route path="*" element={<Error />} />
-          <Route path="team" element={<Team />} />
         </Route>
       </Routes>
     </BrowserRouter>

@@ -1,6 +1,7 @@
 import MenuLisboa from "./MenuLisboa.jsx";
 import OrderButton from "./OrderButton.jsx";
 import MenuFromData from "./MenuFromData.jsx";
+import FilterMusician from "./Filtro.jsx";
 
 const menus = [
   {
@@ -51,7 +52,7 @@ export default function Menus (){
     return (
       <>
         <div class="w3-container w3-light-grey">
-          <h1>healthy food</h1>
+          <h1><strong>Músicos</strong></h1>
           <div class="w3-container w3-cell">
             <MenuLisboa />
           </div>
@@ -61,19 +62,21 @@ export default function Menus (){
           <div class="w3-container w3-cell">
             <MenuLisboa />
           </div>
-          <MenuLisboa />
+          
         </div>
         <div class="w3-container w3-pale-green">
           <div class="w3-container w3-cell">
-            <a
-              className="App-link"
-              href="https://reactjs.org"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learn React
-            </a>
+          
           </div>
+
+          <br />
+
+        <div>
+          <FilterMusician />
+        </div>
+
+        <br />
+
         </div>
         <br />
         <MenuFromData menu={menus[1]} />

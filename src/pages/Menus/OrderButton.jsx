@@ -7,14 +7,7 @@ export default function Order() {
 
   return (
     <>
-      <div class="w3-container">
-        <h1>My first hook: useState</h1>
-
-        <p>You clicked {count} times</p>
-        <button class="w3-button w3-blue" onClick={() => setCount(count + 54)}>
-          Click me
-        </button>
-      </div>
+      
     </>
   );
 }

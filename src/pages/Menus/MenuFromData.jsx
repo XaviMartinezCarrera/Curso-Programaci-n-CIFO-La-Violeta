@@ -2,7 +2,7 @@ export default function MenuFromData({ menu }) {
   return (
     <>
       <div class="w3-container">
-        <h1>Rendering data from array</h1>
+        <h1>Rendering musician from array</h1>
         <div class="w3-panel w3-card w3-light-blue">
           <h1> {menu.name} </h1>
           <span class="w3-sand">{menu.id}</span>

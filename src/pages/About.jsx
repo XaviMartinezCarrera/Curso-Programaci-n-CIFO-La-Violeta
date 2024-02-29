@@ -1,3 +1,4 @@
+import instrumentos from '../assets/imagenes/instrumentos.jpg';
 
 
 export default function About (){
@@ -10,29 +11,25 @@ export default function About (){
           style={{ width: "60%", margin: "auto" }}
           id="about"
         >
-          <div class="w3-padding-large w3-hide-small">
+          
+
+          <div class="w3-col w3-padding-large">
+            <h1 class="w3-center">About AppMusic</h1>
+            <h5 class="w3-center w3-text-black">Music since 2024</h5>
+            <p class="w3-large w3-text-black">
+              AppMusic es una web creada para facilitar el proceso de creación de una banda, poniendo en contacto a músicos de una misma zona geográfica. Ha sido diseñada por Xavi Martínez en 2024. Se trata de un proyecto para el curso de programación web realizado en el CIFO La Violeta de Barcelona. Es un principio de proyecto clonado de otro, y variando alguna de sus partes y componentes.
+            </p>
+
+            <div class="w3-padding-large w3-hide-small">
             <img
-              src="https://www.w3schools.com/w3images/tablesetting2.jpg"
+              src={instrumentos}
               class="w3-round w3-image w3-opacity-min"
-              alt="Table Setting"
+              alt="Instrumentos musicales"
               width="600"
               height="750"
             />
           </div>
-
-          <div class="w3-col w3-padding-large">
-            <h1 class="w3-center">About healthyFood Restaurant</h1>
-            <h5 class="w3-center">Tradition since 1889</h5>
-            <p class="w3-large">
-              The healthyFood restaurant was founded in blabla by Mr. Smith in
-              lorem ipsum dolor sit amet, consectetur adipiscing elit
-              consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-              labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-              nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute iruredolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur.We only use{" "}
-              <span class="w3-tag w3-light-grey">seasonal</span> ingredients.
-            </p>
+          
             <p class="w3-large w3-text-grey w3-hide-medium">
               Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
               officia deserunt mollit anim id est laborum consectetur adipiscing
